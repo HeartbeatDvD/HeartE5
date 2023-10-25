@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "focus_timer" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "focus_timer" ]
 
 permissions:
   contents: read
