@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyIndex</title>
     <style>
-        .hyperlink{
+        .hyperlink {
             text-decoration: none;
             color: #eee;
         }
+
         .tabText {
+
+            border-style: solid;
+            border-left-color: #f15628;
+            border-top-color: #f15628;
+            border-right-color: #3b5b8a;
+            border-bottom-color: #3b5b8a;
+            border-width: 3px;
+
             font-size: 25px;
             font-family: 'Courier New', Courier, monospace;
             padding: 20px;
@@ -20,8 +29,8 @@
             border-radius: 30px;
             transition: 0.5s;
         }
-        .tabText:hover
-        {
+
+        .tabText:hover {
             background-color: #ffffff55;
             padding: 25px;
             font-size: 35px;
@@ -45,7 +54,8 @@
         }
 
         body {
-            background: linear-gradient(to bottom left, rgb(185, 38, 54), rgb(0, 36, 80));
+            /*background: linear-gradient(to bottom left, rgb(185, 38, 54), rgb(0, 36, 80));*/
+            background-image: url(./image/wallhaven-Halloween.jpg);
             margin: 0 auto;
             padding: 0;
             display: flex;
@@ -55,12 +65,19 @@
         }
 
         #H {
+            border-style: solid;
+            border-left-color: #f15628;
+            border-top-color: #f15628;
+            border-right-color: #3b5b8a;
+            border-bottom-color: #3b5b8a;
+            border-width: 3px;
             height: 100px;
             width: 500px;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: #ffffff11;
+            backdrop-filter: blur(20px);
             margin: 20px;
             border-radius: 40px;
             transition: 1s;
@@ -80,9 +97,18 @@
 
         #A {
 
+            border-style: solid;
+            border-left-color: #f15628;
+            border-top-color: #f15628;
+            border-right-color: #3b5b8a;
+            border-bottom-color: #3b5b8a;
+            border-width: 3px;
+
             width: 500px;
             height: 300px;
-            background-color: rgb(167, 68, 68);
+            background-color: rgba(167, 68, 68, 0.2);
+            /* background-image: url(./image/wallhaven-Halloween.jpg); */
+            backdrop-filter: blur(10px);
             border-radius: 40px;
             display: flex;
             align-items: center;
@@ -96,7 +122,8 @@
 
         #R {
             height: 200px;
-            background-color: rgb(220, 198, 142);
+            background-color: rgba(220, 198, 142, 0.5);
+            backdrop-filter: blur(20px);
             flex: 3;
             display: flex;
             justify-content: center;
@@ -106,7 +133,8 @@
 
         #G {
             height: 200px;
-            background-color: rgb(216, 178, 121);
+            background-color: rgba(216, 178, 121, 0.5);
+            backdrop-filter: blur(20px);
             flex: 3;
             display: flex;
             justify-content: center;
@@ -116,7 +144,8 @@
 
         #B {
             height: 200px;
-            background-color: rgb(197, 150, 50);
+            background-color: rgba(197, 150, 50, 0.5);
+            backdrop-filter: blur(20px);
             flex: 3;
             display: flex;
             justify-content: center;
@@ -156,17 +185,17 @@
     <div id="A">
         <div id="R">
             <span class="tabText">
-                <a href="https://www.bing.com"  class="hyperlink">搜索</a>
+                <a href="https://www.bing.com" class="hyperlink">搜索</a>
             </span>
         </div>
         <div id="G">
             <span class="tabText">
-                <a href="https://www.msn.cn/zh-cn/weather/"  class="hyperlink">天气</a>
+                <a href="https://www.msn.cn/zh-cn/weather/" class="hyperlink">天气</a>
             </span>
         </div>
         <div id="B">
             <span class="tabText">
-                <a href="https://www.rili.com.cn/"  class="hyperlink">日历</a>
+                <a href="https://www.rili.com.cn/" class="hyperlink">日历</a>
             </span>
         </div>
     </div>
