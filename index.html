@@ -8,7 +8,9 @@
     <style>
         .hyperlink {
             text-decoration: none;
+            padding: 25px;
             color: #eee;
+            font-size: 30px
         }
 
         .tabText {
@@ -22,19 +24,19 @@
 
             font-size: 25px;
             font-family: 'Courier New', Courier, monospace;
-            padding: 20px;
+            padding: 0px;
             font-weight: lighter;
             background-color: #ffffff22;
             color: #fff;
-            border-radius: 30px;
+            border-radius: 15px;
             transition: 0.5s;
         }
 
         .tabText:hover {
+            padding: 20px;
             background-color: #ffffff55;
-            padding: 25px;
             font-size: 35px;
-            border-radius: 25px;
+            border-radius: 10px;
             letter-spacing: 3px;
         }
 
@@ -158,6 +160,37 @@
         #R:hover {
             flex: 6;
         }
+        .Intr{
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .starfield {
+            border-style: solid;
+            border-left-color: #f15628;
+            border-top-color: #f15628;
+            border-right-color: #3b5b8a;
+            border-bottom-color: #3b5b8a;
+            border-width: 3px;
+
+            
+
+            text-decoration: none;
+            font-size: 30px;
+            background-color: #ffffff11;
+            color: white;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 20px;
+            transition: 0.5s;
+        }
+        .starfield:hover{
+            background-color: #ffffff22;
+            letter-spacing: 5px;
+        }
     </style>
 
     <script>
@@ -182,6 +215,7 @@
 
 
 <body>
+
     <div id="A">
         <div id="R">
             <span class="tabText">
@@ -201,6 +235,11 @@
     </div>
     <div id="H">
         <div class="clock" id="clock"></div>
+    </div>
+    <div class="Intr">
+        <div>
+            <a href="./starfield.html" class="starfield">Star Field</a>
+        </div>
     </div>
 
 </body>
