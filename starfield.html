@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .introduction {
+            position: absolute;
+            left: 600px;
+            width: 900px;
+            height: 800px;
+            background-color: #ffffff11;
+            display: flex;
+            align-items: left;
+            flex-direction: column;
+            border-radius: 40px;
+            backdrop-filter: blur(10px);
+            transition: 0.5s;
+        }
+
+        .introduction:hover {
+            background-color: #ffffff22;
+        }
+
+        .introduction h1,
+        .introduction p {
+            color: white;
+            margin-top: -10px;
+            margin-left: 40px;
+            margin-right: 40px;
+            /* background-color: green; */
+        }
+
+        .introduction h1 {
+            margin-top: 30px;
+            margin-right: 200px;
+            transition: 0.5s;
+        }
+
+        .introduction h1:hover {
+            letter-spacing: 5px;
+        }
+
+        .introduction p {
+            text-indent: 2em;
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        body {
+            background-color: rgb(0, 36, 80);
+        }
+
+        .backgroundBlock {
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            right: 25vw;
+        }
+
+        #backgroundBlock1 {
+            background-color: rgb(219, 169, 114);
+            width: 7vw;
+        }
+
+        #backgroundBlock2 {
+            background-color: rgb(199, 31, 45);
+            width: 6vw;
+        }
+
+        #backgroundBlock3 {
+            background-color: rgb(212, 88, 20);
+            width: 5vw;
+        }
+
+        #backgroundBlock4 {
+
+            background-color: rgb(33, 70, 122);
+            width: 4vw;
+        }
+
+        .book {
+            position: absolute;
+            left: 20%;
+            top: 10%;
+            width: 600px;
+            height: 800px;
+        }
+
+        .page {
+            position: absolute;
+            width: 85%;
+            height: 100%;
+
+            border-radius: 30px;
+            border-style: solid;
+            border-width: 5px;
+            border-color: white;
+            transition: 0.5s;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+
+        }
+
+        .page p {
+            text-indent: 2em;
+            margin-right: 10px;
+            margin-left: 300px;
+            margin-top: 200px;
+        }
+
+
+        #page1 {
+            background-color: rgb(219, 169, 114);
+            left: 0px;
+        }
+
+        #page1:hover {
+            left: 200px;
+        }
+
+        #page2 {
+            background-color: rgb(212, 88, 20);
+            left: -40px;
+        }
+
+        #page2:hover {
+            left: 180px;
+        }
+
+        #page3 {
+            background-color: rgb(199, 31, 45);
+            left: -80px;
+        }
+
+        #page3:hover {
+            left: 160px;
+        }
+
+        #page4 {
+            background-color: rgb(33, 70, 122);
+            left: -120px;
+        }
+
+        #page4:hover {
+            left: 140px;
+        }
+
+        #page5 {
+            background-image: url("./image/starfield-image1.jpg");
+            background-size: cover;
+            background-position: center;
+            left: -160px;
+            transition: 0.5s;
+        }
+
+        #page5:hover {
+            left: 120px;
+        }
+
+        .tab {
+            width: 20%;
+            height: 10%;
+            position: absolute;
+            right: -10%;
+            border-radius: 20px;
+            background-color: #ffffff30;
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #tab1 {
+            top: 60%;
+
+        }
+
+        #tab1 h1 {
+            color: rgb(219, 169, 114);
+            font-size: 200%;
+            background-color: #00000000;
+            padding: 0 20%;
+            border-radius: 30%;
+            transition: 0.25s;
+        }
+
+        #tab1 h1:hover {
+            background-color: #00000011;
+            font-size: 250%;
+        }
+
+        #tab2 {
+            top: 45%;
+        }
+
+        #tab2 h1 {
+            color: rgb(212, 88, 20);
+            background-color: #00000000;
+            font-size: 200%;
+            padding: 0 20%;
+            border-radius: 30%;
+            transition: 0.25s;
+        }
+
+        #tab2 h1:hover {
+            background-color: #00000011;
+            font-size: 250%;
+        }
+
+        #tab3 {
+            top: 30%;
+        }
+
+        #tab3 h1 {
+            color: rgb(199, 31, 45);
+            background-color: #00000000;
+            font-size: 200%;
+            padding: 0 20%;
+            border-radius: 30%;
+            transition: 0.25s;
+        }
+
+        #tab3 h1:hover {
+            background-color: #00000011;
+            font-size: 250%;
+        }
+
+        #tab4 {
+            top: 15%;
+
+        }
+
+        #tab4 h1 {
+            color: rgb(33, 70, 122);
+            background-color: #00000000;
+            font-size: 200%;
+            padding: 0 20%;
+            border-radius: 30%;
+            transition: 0.25s;
+        }
+
+        #tab4 h1:hover {
+            background-color: #00000011;
+            font-size: 250%;
+        }
+        .back
+        {
+            margin: 20px;
+        }
+
+        .back a {
+            text-decoration: none;
+            font-size: 30px;
+            background-color: #ffffff11;
+            color: white;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 20px;
+            border-style: solid;
+            border-width: 3px;
+            transition: 0.5s;
+        }
+        .back a:hover{
+            background-color: #ffffff22;
+            letter-spacing: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="./index.html">BACK</a>
+    </div>
+    <div class="backgroundBlock" id="backgroundBlock1"></div>
+    <div class="backgroundBlock" id="backgroundBlock2"></div>
+    <div class="backgroundBlock" id="backgroundBlock3"></div>
+    <div class="backgroundBlock" id="backgroundBlock4"></div>
+    <div class="book">
+        <div class="introduction">
+            <h1>STAR FIELD</h1>
+            <p>2050，人类首次登陆火星。到了2100年，人类已经能够在太空中生活。</p>
+            <p>2156，人类登陆南门二（距离地球4.37光年）。</p>
+            <p>2159，联合殖民地落成。</p>
+            <p>2160，新亚特兰蒂斯城于2161年建立并成为联合殖民地的官方首都。</p>
+            <p>2167，所罗门·科尔定居夏安星，并在该星球上建立了首个定居点“阿基拉城”。</p>
+            <p>2188，科尔邀请沃利星系与夏安星系一起加入新联盟“自由星系联盟”。自由星系联盟于2189年正式成立。</p>
+            <p>2194，联合殖民地将名为“星际诊所号”的星际站安置在纳里昂星系迪帕拉星附近的轨道上。纳里昂星系的无党派民众认为这是联殖试图扩展边界的举动，并要求联殖撤走星际诊所号。此要求被联殖拒绝后，纳里昂星系的人民投票加入了自由星系联盟。星联于2195年以集体动员的形式保卫纳里昂星系。
+            </p>
+            <p>2196，作为对星联动员的回应，联殖派遣一支舰队进入了纳里昂星系，而星联以同样的方式作出反击，从此拉开了纳里昂之战的序幕。</p>
+            <p>2216，公众情绪在纳里昂之战进行期间持续恶化。最后，联殖与自由星系联盟在2216年签署了《纳里昂条约》，为这次冲突画上了句号。“定居星系群”一词在条约中得到正式确认。</p>
+            <p>2221，星联游骑兵是一支由精英组成的保护和调查部队，致力于为自由星系联盟的所有公民服务。</p>
+            <p>2275，群星组织由塞巴斯蒂安·班克斯创建。首批成员包括杰出的物理学家克洛伊·鲍、塞巴斯蒂安的门生与最年轻的组织成员艾贾·梅玛萨、植物学家兼异种植物专家达柳斯·安德里斯、富有的女继承人和冒险家伯纳黛特·劳伦特、前走私者埃弗拉多以及生物学家和内科医生卡德里·托马。他们在新亚特兰蒂斯城建立了“陋室”，以满足未来几代群星组织成员的需求。
+            </p>
+            <p>2305，巴雷特加入群星组织。</p>
+            <p>2307，自由星系联盟开始在露娜拉星系的维斯塔星发展农业。2308年，联合殖民地声称在第四个星系建立殖民地的自由星系联盟违反了《纳里昂条约》。在外交谈判破裂后，联殖开始围攻维斯塔星，并杀死了所有留在星球上（或被带到星球上）的保卫者。殖民地大战正式开始了。
+            </p>
+            <p>2310，群星组织获得了他们的第一件神器，并将其藏匿在群星组织档案库里。</p>
+            <p>2311，经过数年的冲突之后，一支自由星系联盟民用和军用飞船组成的舰队使用游击战术，摧毁了联殖海军的主力飞船；随着夏安星之战的结束，殖民地大战也实际上宣告结束。</p>
+            <p>2315，作为对自由星系联盟在殖民地大战期间使用民用飞船的回应，联殖先锋队成立了。先锋队是联殖自己的平民海军，由使用自有飞船的平民组成，他们承诺保护联合殖民地及其利益。而这项服务的最终回报是联合殖民地的公民身份。
+            </p>
+            <p>2319，莎拉·摩根成为联殖领航部队最年轻的领导。但该部队于2320年解散，因此她在这个职位上任职的时间极其短暂。失去归宿但仍然渴望施展自己所学的摩根加入了群星组织。</p>
+            <p>2321，定居星系群大型星舰制造商之一“斯特劳艾克伦集团”的共同所有者沃尔特·斯特劳加入群星组织，并成为该组织的主要投资者。</p>
+            <p>2322，前深红舰队海盗弗拉迪米尔·萨尔加入群星组织。</p>
+            <p>2325，莎拉·摩根成为群星组织主席。</p>
+
+            <p>2325，神学家马蒂奥·卡特里加入群星组织。</p>
+            <p>2326，巴雷特发现了群星组织档案库中的首件神器，并知道它肯定具有不凡之处。</p>
+            <p>2326，与莎拉·摩根通信数月后，研究生兼天才科学家诺维尔被邀请加入群星组织。</p>
+            <P>2328，巴雷特说服群星组织购买星际站L-868，并将其改装成绰号“探察之眼”的深空扫描仪。</P>
+            <p>2330，《星空》的故事由此开始。</p>
+
+
+        </div>
+        <div class="page" id="page1">
+            <p>The wonder is, not that the field of stars is so vast, but that man has measured it.</p>
+            <p id="from">--Star Field</p>
+            <div class="tab" id="tab1">
+                <h1>D</h1>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <p>奇迹的不是星域的辽阔，而在于我们对它的丈量。</p>
+            <p id="from">--《星空》</p>
+            <div class="tab" id="tab2">
+                <h1>C</h1>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="tab" id="tab3">
+                <h1>B</h1>
+            </div>
+        </div>
+        <div class="page" id="page4">
+            <div class="tab" id="tab4">
+                <h1>A</h1>
+            </div>
+        </div>
+        <div class="page" id="page5"></div>
+    </div>
+</body>
+
+
+</html>
